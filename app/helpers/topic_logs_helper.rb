@@ -1,0 +1,2 @@
+module TopicLogsHelper
+end

@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @topic_log.person %>
+</p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @topic_log.topic %>
+</p>
+
+<p>
+  <strong>Posted:</strong>
+  <%= @topic_log.posted %>
+</p>
+
+<table>
+	<td><%= button_to 'Edit', edit_topic_log_path(@topic_log), :method => "get" %> </td>
+	<td><%= button_to 'Back', topic_logs_path, :method => "get" %></td>
+</table>

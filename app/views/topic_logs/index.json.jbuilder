@@ -1,0 +1,1 @@
+json.array! @topic_logs, partial: 'topic_logs/topic_log', as: :topic_log

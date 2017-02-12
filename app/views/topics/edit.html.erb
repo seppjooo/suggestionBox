@@ -1,0 +1,8 @@
+<h1>Editing Topic</h1>
+
+<%= render 'form' %>
+
+<table>
+	<td><%= button_to 'Show', @topic , :method => "get"%></td>
+	<td><%= button_to 'Back', topics_path, :method => "get" %></td>
+</table>

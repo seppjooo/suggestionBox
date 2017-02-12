@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fname</th>
+      <th>Lname</th>
+      <th>Course</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td><%= person.fName %></td>
+        <td><%= person.lName %></td>
+        <td><%= person.course %></td>
+        <td><%= button_to 'Show', person, :method => "get" %></td>
+        <td><%= button_to 'Edit', edit_person_path(person), :method => "get" %></td>
+        <td><%= button_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= button_to 'New Person', new_person_path, :method => "get" %>

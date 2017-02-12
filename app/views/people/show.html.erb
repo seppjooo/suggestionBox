@@ -1,0 +1,25 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @person.fName %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @person.lName %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @person.course %>
+</p>
+
+<table>
+	<td><%= button_to 'Edit', edit_person_path(@person), :method => "get" %> </td>
+	<td><%= button_to 'Back', people_path, :method => "get" %></td>
+
+</table>
+
+</center>

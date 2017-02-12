@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @vote.topic_id %>
+</p>
+
+<table>
+	<td><%= button_to 'Edit', edit_vote_path(@vote), :method => "get" %></td>
+	<td><%= button_to 'Back', votes_path, :method => "get" %></td>
+</table>

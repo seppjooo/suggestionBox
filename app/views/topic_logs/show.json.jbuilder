@@ -1,0 +1,1 @@
+json.partial! "topic_logs/topic_log", topic_log: @topic_log
